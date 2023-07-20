@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(0, 10):
-    for j in range(i, 10):
-        if i == 9:
-            print("{}{}".format(i, j))
-        else:
-            print("{}{}".format(i, j), end=", ")
+for i in range(0, 100):
+    if i == 99:
+        print(i)
+    else:
+        print("{:0>2d}".format(i), end=", ")
