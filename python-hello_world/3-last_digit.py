@@ -6,10 +6,10 @@ new_number = edited_number[-1]
 string_number = int(new_number)
 neg_num = -abs(string_number)
 if number < 0 and string_number != 0:
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, neg_num))
+    print('Last digit of {:d} is {:d} and is less than 6 and not 0'.format(number, neg_num))
 elif string_number > 5:
-    print("Last digit of {:d} is {:d} and is greater than 5".format(number, string_number))
+    print('Last digit of {:d} is {:d} and is greater than 5'.format(number, string_number))
 elif string_number == 0:
-    print("Last digit of {:d} is {:d} and is 0".format(number, string_number))
+    print('Last digit of {:d} is {:d} and is 0'.format(number, string_number))
 elif string_number < 6 and string_number != 0:
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, string_number))
+    print('Last digit of {:d} is {:d} and is less than 6 and not 0'.format(number, string_number))
