@@ -3,11 +3,8 @@ def safe_print_division(a, b):
     """prints the result of division of 2 integers"""
     result = 0
     try:
-        result = a / b
-        print("Inside result: {}".format(result))
+        result = a / b        
     except ZeroDivisionError:
-        print("Inside result: {}".format(None))
+        return None
     finally:
-        return result
-
-       
+        print("Inside result: {}".format(result))
