@@ -7,7 +7,7 @@ lst_len = len(arg_list)
 if lst_len == 0:
     print("{} arguments.".format(lst_len))
 elif lst_len == 1:
-    print("{} argument.".format(lst_len))
+    print("{} argument:".format(lst_len))
 else:
     print("{} arguments:".format(lst_len))
 for i in range(lst_len):
