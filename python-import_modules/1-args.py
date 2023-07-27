@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+__name__ == '__main__'
 
 argument = input()
 arg_list = argument.split()
