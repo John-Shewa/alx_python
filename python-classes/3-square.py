@@ -15,22 +15,22 @@ class Square:
 
     def __init__(self, size=0):
         """ Initializes the Square object with the given size."""
-        self.__size = size
+        self.size = size
 
         @property
         
         def size(self):
             """The property of size."""
-            return self.__size
+            return self._size
         
         @size.setter
-        def size(self, value)
+        def size(self, size):
             """A setter for value"""
-            if not isinstance(value, int):
+            if not isinstance(size, int):
                 raise TypeError("size must be an integer")
-            elif size < 0:
+            elif value < 0:
                 raise ValueError("size must be >= 0")
-            self.__size = value
+            self._size = size
 
     def area(self):
         """ 
