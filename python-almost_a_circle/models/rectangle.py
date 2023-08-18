@@ -82,13 +82,15 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """ This prints the rectangle with '#' """
-        if self.width == 0 or self.height == 0:
-            print("")
-            return
+        """ This prints the rectangle with '#' by taking care of x and y"""
+        for i in range(self.y):
+            print()
         for i in range(self.height):
             for j in range(self.width):
-                print("#", end="")
+                if j < self.x or j >= self.x + self.width:
+                    print("", end="")
+                else:
+                    print("#", end="")
             print()
 
     def __str__(self):
