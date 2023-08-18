@@ -12,5 +12,8 @@ class Base:
 
     def __init__(self, id=None):
         """ initializes the Base object with the given id"""
-        self.id = id
-    __nb_objects += 1
+        if id is not None:
+            self.id = id
+        else:
+            self.__nb_objects += 1
+            self.id = self.__nb_objects
