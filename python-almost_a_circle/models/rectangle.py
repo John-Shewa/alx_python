@@ -95,3 +95,11 @@ class Rectangle(Base):
     def __str__(self):
         """ This returns a string representation of the rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """  This sssingns an argument to each attribute"""
+        print(self, id)
+        print(self, self.width)
+        print(self, self.height)
+        print(self, self.x)
+        print(self, self.y)
