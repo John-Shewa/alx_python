@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from models.base import Base
 """ This module defines a class called Rectangle which inherits from the class called Base in the models folder"""
+from models.base import Base
 
 
 class Rectangle(Base):
