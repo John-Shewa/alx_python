@@ -12,7 +12,7 @@ class Square:
             y: y coordinate of square
             id: id of the square
          """
-         super().__init__(size, size, x, y, id)
+         super().__init__(id)
 
          @property
          def size(self):
