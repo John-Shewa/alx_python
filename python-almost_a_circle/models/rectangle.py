@@ -86,14 +86,17 @@ class Rectangle(Base):
         if self.width == 0 or self.height == 0:
             print("")
             return
-        for i in range(self.x):
-            print("")
+        for i in range(self.y):
+            print()
         for i in range(self.height):
             for j in range(self.width):
-                if j < self.y or j >= self.y + self.width:
+                if i < self.y or i >= self.y + self.height:
                     print(" ", end="")
                 else:
-                    print("#", end="")
+                    if j < self.x or j >= self.x + self.width:
+                        print(" ", end="")
+                    else:
+                        print("#", end="")
             print()
 
     def __str__(self):
