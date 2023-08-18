@@ -2,7 +2,7 @@
 """ This module defines a class called Square which inherits from the class called Rectangle in the models folder"""
 from models.rectangle import Rectangle
 
-class Square:
+class Square(Rectangle):
     """ Defines a square"""
     def __init__(self, size, x=0, y=0, id=None):
          """ Initializes a square
