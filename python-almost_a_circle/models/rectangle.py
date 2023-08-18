@@ -94,9 +94,9 @@ class Rectangle(Base):
                     print(" ", end="")
                 else:
                     if j < self.x or j >= self.x + self.width:
-                        print(" ", end="")
-                    else:
                         print("#", end="")
+                    else:
+                        print(" ", end="")
             print()
 
     def __str__(self):
