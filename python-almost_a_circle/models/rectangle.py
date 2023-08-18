@@ -92,7 +92,7 @@ class Rectangle(Base):
             [print("#", end="") for j in range(self.width)]
             print("")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """  This sssingns an argument to each attribute"""
         if len(args) != 0:
             for i, arg in enumerate(args):
