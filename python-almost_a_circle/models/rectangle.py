@@ -98,6 +98,9 @@ class Rectangle(Base):
 
     def update(self, *args):
         """  This sssingns an argument to each attribute"""
+        if len(args) != 5:
+            raise ValueError("arguments should be 5")
+        
         self.id = args[0]
         self.width = args[1]
         self.height = args[2]
