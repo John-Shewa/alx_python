@@ -94,26 +94,12 @@ class Rectangle(Base):
 
     def update(self, *args):
         """  This sssingns an argument to each attribute"""
-        if len(args) == 1:
-            self.id = args[0]
-        elif len(args) == 2:
-            self.id = args[0]
-            self.width = args[1]
-        elif len(args) == 3:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-        elif len(args) == 4:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-        elif len(args) == 5:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
+        if len(args) != 0:
+            for i, arg in enumerate(args):
+                setattr(self, f"_{i}", arg)
+                kwargs = {}
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def __str__(self):
         """ This returns a string representation of the rectangle"""
