@@ -33,8 +33,8 @@ def main(username, password, name):
 
 if __name__ == "__main__":
 
-    mysql username = input("user name:")
-    mysql password = input("Enter password:")
-    database name= input("Enter database name:")
+    username = input("user name:")
+    password = input("Enter password:")
+    name = input("Enter database name:")
 
     main(username, password, name)
