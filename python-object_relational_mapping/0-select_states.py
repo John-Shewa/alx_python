@@ -19,9 +19,10 @@ def main():
 
     connection = MySQLdb.connect(host="localhost",
                                  port=3306,
-                                 user=username,
-                                 password=password,
-                                 database=database)
+                                 user="root",
+                                 passwd="root",
+                                 db="my_db",
+                                 charset="utf8")
 
     query = "SELECT * FROM states ORDER BY id ASC"
     result = connection.query(query)
