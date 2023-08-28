@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This script lists all states from database"""
-import MySQLdb
+import MySQLdb as DB
 
 
 def main():
@@ -17,19 +17,21 @@ def main():
     password = input("Enter password:")
     database = input("Enter database name:")
 
-    connection = MySQLdb.connect(host="localhost",
+    db_connect = DB.connect(host="localhost",
                                  port=3306,
                                  user="root",
                                  passwd="root",
                                  db="my_db",
                                  charset="utf8")
 
-    query = "SELECT * FROM states ORDER BY id ASC"
-    result = connection.query(query)
+    db_cursor = db_connect.cursor()
+    db_cursor.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY id ASC")
+    results = db_cursor.fetchall()
 
-    for row in result:
-        print(row)
+    for row in results:
+        print(row[1])
 
+    cursor.close()
     connection.close()
 
 
