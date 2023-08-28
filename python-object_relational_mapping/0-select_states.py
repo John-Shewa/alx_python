@@ -17,7 +17,7 @@ def main(username, password, database):
                             user="root", passwd="root", db="my_db")
 
     db_cursor = db_connect.cursor()
-    db_cursor.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY id ASC")
+    db_cursor.execute("SELECT * FROM states ORDER BY id ASC")
     results = db_cursor.fetchall()
 
     for row in results:
