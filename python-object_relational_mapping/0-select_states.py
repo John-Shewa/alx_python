@@ -13,12 +13,8 @@ def main(username, password, database):
         database: The name of the database 
     """
 
-    db_connect = DB.connect(host="localhost",
-                                 port=3306,
-                                 user="root",
-                                 passwd="root",
-                                 db="my_db",
-                                 charset="utf8")
+    db_connect = DB.connect(host="localhost", port=3306,
+                            user="root", passwd="root", db="my_db")
 
     db_cursor = db_connect.cursor()
     db_cursor.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY id ASC")
