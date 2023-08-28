@@ -13,10 +13,6 @@ def main(username, password, database):
         database: The name of the database 
     """
 
-    username = input("user name:")
-    password = input("Enter password:")
-    database = input("Enter database name:")
-
     db_connect = DB.connect(host="localhost",
                                  port=3306,
                                  user="root",
@@ -36,4 +32,9 @@ def main(username, password, database):
 
 
 if __name__ == "__main__":
-    main()
+
+    username = input("user name:")
+    password = input("Enter password:")
+    database = input("Enter database name:")
+
+    main(username, password, database)
