@@ -3,7 +3,7 @@
 import MySQLdb as DB
 
 
-def main(username, password, database):
+def main(username, password, name):
     """ 
     Lists all states from hbtn_0e_0_usa
 
@@ -33,8 +33,8 @@ def main(username, password, database):
 
 if __name__ == "__main__":
 
-    username = input("user name:")
-    password = input("Enter password:")
-    database = input("Enter database name:")
+    mysql username = input("user name:")
+    mysql password = input("Enter password:")
+    database name= input("Enter database name:")
 
-    main(username, password, database)
+    main(username, password, name)
