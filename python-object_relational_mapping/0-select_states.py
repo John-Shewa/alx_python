@@ -3,7 +3,7 @@
 import MySQLdb as DB
 
 
-def main():
+def main(username, password, database):
     """ 
     Lists all states from hbtn_0e_0_usa
 
