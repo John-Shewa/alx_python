@@ -13,7 +13,8 @@ connect = MySQLdb.connect(host="localhost",
                           passwd=sys.argv[2],
                           db=sys.argv[3])
 cur = connect.cursor()
-cur.execute("SELECT * FROM states WHERE BINARY `name` = "{}" ORDER BY id ASC".format(sys.argv[4].strip("'")))
+cur.execute(
+    """SELECT * FROM states WHERE BINARY `name` = "{}" ORDER BY id ASC""".format(sys.argv[4].strip("'")))
 
 for row in cur.fetchall():
     print(row)
