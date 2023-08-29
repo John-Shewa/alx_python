@@ -3,7 +3,7 @@
 import MySQLdb as DB
 
 
-def main(username, password, database):
+def main():
     """ 
     Lists all states from hbtn_0e_0_usa
 
@@ -13,22 +13,22 @@ def main(username, password, database):
         database: The name of the database 
     """
 
-    db_connect = DB.connect(host="localhost", port=3306,
-                            user="root", passwd="root", db="my_db")
-
-    db_cursor = db_connect.cursor()
-    db_cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    results = db_cursor.fetchall()
-
-    for row in results:
-        print(row[1])
-
-    cursor.close()
-    connection.close()
-
-
-if __name__ == "__main__":
     username = input("user name:")
     password = input("Enter password:")
     database = input("Enter database name:")
-    main(username, password, database)
+
+    db_connect = DB.connect(host="localhost", port=3306,
+                            user=root, passwd=root, db=my_db)
+
+    cursor = db_connect.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+
+    for row in cursor:
+        print(row)
+
+    cursor.close()
+    db_connect.close()
+
+
+if __name__ == "__main__":
+    main()
