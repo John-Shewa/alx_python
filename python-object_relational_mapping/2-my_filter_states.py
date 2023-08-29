@@ -14,7 +14,8 @@ connect = MySQLdb.connect(host="localhost",
                           db=sys.argv[3])
 cur = connect.cursor()
 cur.execute(
-    """SELECT * FROM states WHERE BINARY `name` = "{}" ORDER BY id ASC""".format(sys.argv[4].strip("'")))
+    """SELECT * FROM states WHERE BINARY `name` = "{}" ORDER BY id ASC"""
+    .format(sys.argv[4].strip("'")))
 
 for row in cur.fetchall():
     print(row)
