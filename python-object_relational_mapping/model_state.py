@@ -7,10 +7,10 @@ Base = declarative_base()
 
 
 class State(Base):
-    """ This state class inherits from the Base class
-
-        Args:
-            Base (imported class): [imported class]"""
+    """ This class represents a state in a mysql database.
+        Attributes:
+            id: An integer that is used as the primary keyfor the table.
+            name: A string that represents the name of the state. """
 
     __tablename__ = 'states'
 
