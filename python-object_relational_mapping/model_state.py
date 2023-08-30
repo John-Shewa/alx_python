@@ -8,6 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
+    """ This state class inherits from the Base class"""
     __tablename__ = 'states'
 
     id = sqlalchemy.Column(
