@@ -38,7 +38,7 @@ def python(text):
 
 
 @app.route("/number/<n>")
-def number(n):
+def number(n=int):
     """ A function that returns an int "n" 
     followed by text "is a number ".
     """
