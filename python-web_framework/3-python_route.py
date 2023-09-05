@@ -3,33 +3,37 @@
 """
 
 from flask import Flask
-""" The Flask module is imported from the flask package.
-"""
+
 app = Flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
 def home():
-    """ A function that returns Hello HBNB !"""
+    """ A function that returns "Hello HBNB!"
+    """
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """ A function that returns HBNB"""
+    """ A function that returns the string "HBNB".
+    """
     return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
-    """ A function that returns a text by replacing _ with space."""
+    """ A function that returns a string "C" followed by
+    the value of text by replacing _ with space.
+    """
     return "C {}".format(text.replace("_", " "))
 
 
 @app.route("/python/<text>", strict_slashes=False)
 def c(text="is cool"):
-    """ A function that returns a text by replacing _ with space."""
-    return "C {}".format(text.replace("_", " "))
+    """ A function that returns a string "Python"
+    followed by text "is cool" by replacing _ with space."""
+    return "Python {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
