@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" This is a script that starts a flask web application"""
+""" This is a script that starts a flask web application.
+"""
 
 from flask import Flask
-
+""" The Flask module is imported from the flask package.
+"""
 app = Flask(__name__)
 
 
