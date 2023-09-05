@@ -37,7 +37,6 @@ def python(text):
     return "Python {}".format(text.replace("_", " "))
 
 
-@app.route('/number/')
 @app.route('/number/<n>')
 def number(n):
     """ A function that returns an int "n" 
