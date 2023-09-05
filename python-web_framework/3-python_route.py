@@ -28,8 +28,9 @@ def c(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route("/python/<text>", strict_slashes=False)
-def python(text="is cool"):
+@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
+@app.route('/python/<text>')
+def python(text):
     """ A function that returns a string "Python" 
     followed by text "is cool" by replacing _ with space.
     """
