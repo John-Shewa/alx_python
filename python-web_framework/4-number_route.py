@@ -37,13 +37,15 @@ def python(text):
     return "Python {}".format(text.replace("_", " "))
 
 
-@app.route('/number/<n>')
+@app.route("/number/<n>")
 def number(n):
     """ A function that returns an int "n" 
     followed by text "is a number ".
     """
     if n is int:
         return "{} is a number".format(n)
+    else:
+        return None
 
 
 if __name__ == "__main__":
