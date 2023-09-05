@@ -46,7 +46,7 @@ def number(n):
         int(n)
         return "{} is a number".format(n)
     except ValueError:
-        return None
+        return "{} is not a number".format(n)
 
 
 if __name__ == "__main__":
