@@ -42,11 +42,8 @@ def number(n):
     """ A function that returns an int "n" 
     followed by text "is a number ".
     """
-    try:
-        int(n)
+    if n is int:
         return "{} is a number".format(n)
-    except ValueError:
-        return "n is not a number"
 
 
 if __name__ == "__main__":
