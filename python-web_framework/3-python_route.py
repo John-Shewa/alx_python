@@ -30,8 +30,9 @@ def c(text):
 
 @app.route("/python/<text>", strict_slashes=False)
 def python(text="is cool"):
-    """ A function that returns a string "Python"
-    followed by text "is cool" by replacing _ with space."""
+    """ A function that returns a string "Python" 
+    followed by text "is cool" by replacing _ with space.
+    """
     return "Python {}".format(text.replace("_", " "))
 
 
