@@ -43,7 +43,7 @@ def number(n=int):
     followed by text "is a number ".
     """
     if n is int:
-        return "{} is a number".format(n)
+        return f"{n} is a number"
     else:
         return None
 
