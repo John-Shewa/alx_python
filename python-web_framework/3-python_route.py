@@ -10,21 +10,25 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def home():
+    """ A function that returns Hello HBNB !"""
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
+    """ A function that returns HBNB"""
     return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
+    """ A function that returns a text by replacing _ with space."""
     return "C {}".format(text.replace("_", " "))
 
 
 @app.route("/python/<text>", strict_slashes=False)
 def c(text="is cool"):
+    """ A function that returns a text by replacing _ with space."""
     return "C {}".format(text.replace("_", " "))
 
 
