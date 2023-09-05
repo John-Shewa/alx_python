@@ -39,7 +39,7 @@ def python(text):
 
 @app.route('/number/')
 @app.route('/number/<n>')
-def python(n):
+def number(n):
     """ A function that returns an int "n" 
     followed by text "is a number ".
     """
