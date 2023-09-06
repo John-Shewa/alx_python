@@ -49,7 +49,7 @@ def number(n):
 def template(n):
     """ A function that returns a html page if 
     "n" is an integer."""
-    return (render_template("/template/5-number.html", n=n))
+    return (render_template("5-number.html", n=n))
 
 
 if __name__ == "__main__":
