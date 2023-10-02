@@ -2,7 +2,7 @@
 """ A class called Square that inherits from 
 the class BaseGeometry defined in 7-base_geometry.py"""
 
-Rectangle = __import__('7-base_geometry').Rectangle
+Rectangle = __import__('7-rectangle').Rectangle
 
 
 class Square(Rectangle):
