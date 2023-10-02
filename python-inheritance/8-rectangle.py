@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" A class called rectangle that inherits from 
-the class BaseGeometry defined in 5-base_geometry.py"""
+""" A class called Square that inherits from 
+the class BaseGeometry defined in 7-base_geometry.py"""
 
 Rectangle = __import__('7-base_geometry').Rectangle
 
