@@ -2,6 +2,6 @@
 """ A class called Base Geometry"""
 
 
-class BaseGeometry():
+class BaseGeometry:
     """ An empty class"""
     pass
