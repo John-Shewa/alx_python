@@ -2,8 +2,10 @@
 
 def update_dictionary(a_dictionary, key, value):
     key = str(key)
-
-    if key in a_dictionary:
-        a_dictionary[value] = key
-    else:
-        a_dictionary[key] = value
+    updated_dict = dict()
+    for element in a_dictionary:
+        if key in a_dictionary:
+            value = key:
+        else:
+            updated_dict.add(key)
+    return updated_dict
