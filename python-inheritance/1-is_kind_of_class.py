@@ -15,3 +15,7 @@ def is_kind_of_class(obj, a_class):
         True if object is an instance or false if it is not
     """
     return isinstance(obj, a_class) or issubclass(type(obj), a_class)
+
+
+if __name__ == "__main__":
+    is_kind_of_class

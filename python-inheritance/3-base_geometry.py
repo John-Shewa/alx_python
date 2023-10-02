@@ -5,3 +5,7 @@
 class BaseGeometry:
     """ An empty class"""
     pass
+
+
+if __name__ == "__main__":
+    BaseGeometry
