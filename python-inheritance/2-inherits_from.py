@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ A function that returns true if the object
 is an instance of a class that inherited
-from the specified class"""
+from the specified class """
 
 
 def inherits_from(obj, a_class):
@@ -14,4 +14,5 @@ def inherits_from(obj, a_class):
         True if object is an instance of a_class,
         otherwise false
     """
+
     return (issubclass(type(obj), a_class) and type(obj) != a_class)
