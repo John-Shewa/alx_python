@@ -3,10 +3,9 @@
 is an instance of a class that inherited
 from the specified class """
 
-if __name__ == "__main__":
 
-    def inherits_from(obj, a_class):
-        """ Returns True if object is an instance of a_class
+def inherits_from(obj, a_class):
+    """ Returns True if object is an instance of a_class
         that inherited from it
         Args:
             obj: the object to be checked
@@ -16,4 +15,8 @@ if __name__ == "__main__":
             otherwise false
         """
 
-        return (issubclass(type(obj), a_class) and type(obj) != a_class)
+    return (issubclass(type(obj), a_class) and type(obj) != a_class)
+
+
+if __name__ == "__main__":
+    inherits_from
