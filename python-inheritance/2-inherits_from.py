@@ -8,7 +8,7 @@ def inherits_from(obj, a_class):
     """ Returns True if object is an instance of a_class
     that inherited from it
     Args:
-        obj: the object to be checed
+        obj: the object to be checked
         a_class: the class to be checked against
     Returns:
         True if object is an instance of a_class,
