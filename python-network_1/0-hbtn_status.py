@@ -8,4 +8,4 @@ if __name__ == "__main__":
     if response.status_code == 200:
         print('Body response:')
         print('\t - type: {}'.format(type(url)))
-        print('\t - content: {}'.format(url))
+        print('\t - content: {}'.format(requests))
