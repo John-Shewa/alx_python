@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A script that fetches the url https://alu-intranet.hbtn.io/status"""
-import requests
+if __name__ == "__main__":
+    import requests
 
-url = "https://alu-intranet.hbtn.io/status"
-response = requests.get(url)
+    url = "https://alu-intranet.hbtn.io/status"
+    response = requests.get(url)
