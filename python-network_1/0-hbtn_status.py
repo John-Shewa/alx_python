@@ -7,5 +7,5 @@ if __name__ == "__main__":
     response = requests.get(url)
     if response.status_code == 200:
         print('Body response:')
-        print('\t - type: {}'.format(type(html)))
-        print('\t - content: {}'.format(html))
+        print('\t - type: {}'.format(type(response)))
+        print('\t - content: {}'.format(response))
