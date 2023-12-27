@@ -21,7 +21,3 @@ class inherits_from:
         """
 
         return (issubclass(type(obj), a_class) and type(obj) != a_class)
-
-
-if __name__ == "__main__":
-    inherits_from
