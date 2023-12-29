@@ -97,12 +97,11 @@ class Rectangle(Base):
         if len(args) != 0:
             for i, arg in enumerate(args):
                 setattr(self, f"_{i}", arg)
-                kwargs = {}
-        for key, value in kwargs.items():
+                kwargs = []
+                kwargs.append(i)
+        for key, value in kwargs[i, args]:
             setattr(self, key, value)
 
     def __str__(self):
         """ This returns a string representation of the rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
-
-    
